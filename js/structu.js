@@ -1,5 +1,5 @@
 /**
- *  InicPila(p) // inicializa la pila con 0 elementos
+ *  InicPila(p) // inicializa la pila con 0 elementos, retorna la pila inicializada
  *  ReadPila(p) //le dice al usuario que cargue los valores
  *  TopePila(p)  // me dice el tope de la pila
  *  Apilar(p, elemento)  // apila el elemento en el tope de la pila
@@ -21,6 +21,7 @@ function inicPila() {
 function writePila(p) {
   var message = p.write();
   console.log(message);
+  consoleAddMessage(message);
   return p.write(message);
 }
 
@@ -37,21 +38,33 @@ function desapilar(p) {
   }
 }
 
-function tope(p){
+function tope(p) {
   return p.tope();
 }
 
-function pilaVacia(){
+function pilaVacia() {
   return p.vacia();
 }
 
 
-function vaciarPila(p){
-  while (!p.vacia()){
+function vaciarPila(p) {
+  while (!p.vacia()) {
     p.desapilar();
   }
 }
 
-function readPila(p){
-  nombre=prompt('Ingrese su nombre:','');
+function readPila(p) {
+  var pilaString = prompt('ingrese los elementos de la pila\nseparados por comas:','');
+  if (pilaString !== null && pilaString !== "") {
+    //console.log(pilaString);
+    var arrayAux = pilaString.split(",");
+    var i = 0;
+    while (i < arrayAux.length ){
+      if (arrayAux[i] !== ""){
+        p.apilar(arrayAux[i]);
+      }
+      i++;
+    }
+    return p;
+  }
 }
