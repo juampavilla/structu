@@ -1,20 +1,34 @@
 "use strict";
-//inicializando las pilas
-var pila1 = inicPila();
-var pila2 = inicPila();
+
+/*function writeMensaje(mensaje){
+  var pilaMensaje = inicPila();
+  apilar(pilaMensaje, mensaje);
+  writePila(pilaMensaje);
+}*/
+
+var CJTO1 = inicPila();
+var CJTO2 = inicPila();
 var DADA = inicPila();
-readPila(DADA);//cargando la pila por teclado
+var elemAux;
+
+readPila(DADA);
+consoleAddMessage("DADA al principio:");
 writePila(DADA);
 
-apilar(pila1,5);
-apilar(pila1,"hola");
-apilar(pila1,8);
-writePila(pila1);
+elemAux = desapilar(DADA);
+apilar(CJTO1, elemAux);
+elemAux = desapilar(DADA);
+apilar(CJTO1, elemAux);
+elemAux = desapilar(DADA);
+apilar(CJTO1, elemAux);
 
-apilar(pila2,desapilar(pila1));
+apilar(CJTO2, desapilar(DADA));
+apilar(CJTO2, desapilar(DADA));
+consoleAddMessage("********RESULTADOS*******");
+consoleAddMessage("DADA:");
+writePila(DADA);
+consoleAddMessage("CJTO1:");
+writePila(CJTO1);
 
-writePila(pila1);
-writePila(pila2);
-
-vaciarPila(pila1);
-writePila(pila1);
+consoleAddMessage("CJTO2:");
+writePila(CJTO2);

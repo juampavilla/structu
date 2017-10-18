@@ -1,11 +1,11 @@
 /**
- *  InicPila(p) // inicializa la pila con 0 elementos, retorna la pila inicializada
- *  ReadPila(p) //le dice al usuario que cargue los valores
- *  TopePila(p)  // me dice el tope de la pila
- *  Apilar(p, elemento)  // apila el elemento en el tope de la pila
- *  Desapilar(p) // desapila un elemento de la pila
+ *  inicPila() // inicializa la pila con 0 elementos, retorna la pila inicializada
+ *  readPila(p) //le dice al usuario que cargue los valores
+ *  topePila(p)  // me dice el tope de la pila
+ *  apilar(p, elemento)  // apila el elemento en el tope de la pila
+ *  desapilar(p) // desapila un elemento de la pila
  *  vaciarPila(p) // vacia la pila
- *  WritePila(p) // imprime la pila en pantalla
+ *  writePila(p) // imprime la pila en pantalla
  *  pilaVacia(p) //indica si la pila está vacía
  */
 
