@@ -1,34 +1,27 @@
 "use strict";
 
-/*function writeMensaje(mensaje){
-  var pilaMensaje = inicPila();
-  apilar(pilaMensaje, mensaje);
-  writePila(pilaMensaje);
-}*/
+/*
+program PASADISTINTOS;
+{Este un programa carga por teclado una pila ORIGEN y pasa a la pila DISTINTO
+todos aquellos elementos que preceden al valor 5}
+uses estructu;
+*/
+var origen;
+var distinto;
 
-var CJTO1 = inicPila();
-var CJTO2 = inicPila();
-var DADA = inicPila();
-var elemAux;
+origen = inicPila();
+distinto = inicPila();
+readPila(origen);
+writePila(origen);
 
-readPila(DADA);
-consoleAddMessage("DADA al principio:");
-writePila(DADA);
+if (!pilaVacia(origen)){
+  console.log("entro");
+  while (tope(origen) != 5) {
+    apilar (distinto, desapilar(origen))
+  }
 
-elemAux = desapilar(DADA);
-apilar(CJTO1, elemAux);
-elemAux = desapilar(DADA);
-apilar(CJTO1, elemAux);
-elemAux = desapilar(DADA);
-apilar(CJTO1, elemAux);
+} 
 
-apilar(CJTO2, desapilar(DADA));
-apilar(CJTO2, desapilar(DADA));
-consoleAddMessage("********RESULTADOS*******");
-consoleAddMessage("DADA:");
-writePila(DADA);
-consoleAddMessage("CJTO1:");
-writePila(CJTO1);
+writePila(origen);
 
-consoleAddMessage("CJTO2:");
-writePila(CJTO2);
+writePila(distinto);

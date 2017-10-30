@@ -42,7 +42,7 @@ function tope(p) {
   return p.tope();
 }
 
-function pilaVacia() {
+function pilaVacia(p) {
   return p.vacia();
 }
 
