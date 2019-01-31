@@ -2,7 +2,7 @@
 
 /*
 program PASADISTINTOS;
-{Este un programa carga por teclado una pila ORIGEN y pasa a la pila DISTINTO
+{Este un programa carga por teclado una pila ORIGEN y pasa a la pila DESTINTO
 todos aquellos elementos que preceden al valor 5}
 uses estructu;
 */
