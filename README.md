@@ -37,8 +37,9 @@ writePila(destino);
 ```
 
 #resultado
+```
 input/origen: <BASE>|1||2||3||4||5||6||7|<TOPE>
 
 destino: <BASE>|1||2||3||4||5|<TOPE>
 origen: <BASE>|7||6|<TOPE>
-
+```
