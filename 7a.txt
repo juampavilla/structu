@@ -1,0 +1,30 @@
+"use strict";
+var origen = inicPila();
+var destino = inicPila();
+var aux;
+var i = 0;
+readPila(origen);
+writePila(origen);
+
+if(pilaVacia(origen)){
+  apilar(destino, desapilar(origen));
+}
+ while(!pilaVacia(origen)){
+  aux = desapilar(origen);
+  i = 0;
+  writePila(origen);
+  while(!pilaVacia(destino)){
+    apilar(origen, desapilar(destino));
+    i++;
+  }
+  apilar(destino, aux);
+  while(i>0){
+    apilar(destino, desapilar(origen));
+    i--;
+  }
+  
+}
+
+  consoleAddMessage("resultado");
+  writePila(destino);
+  writePila(origen);
