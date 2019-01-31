@@ -2,67 +2,37 @@
 stacks and rows in JS, inspired in UNICEN Courses http://www.exa.unicen.edu.ar/
 And initial aproach to programming with stacks and rows in JS instead of Pascal
 
-#Example 
+en el archivo scripts.js están el uso de la pila para resolver diferentes problemas
 
+#Ejemplo
+´´´
 "use strict";
 
-/*function writeMensaje(mensaje){
+/*
+program PASADISTINTOS;
+{Este un programa carga por teclado una pila ORIGEN y pasa a la pila DESTINTO
+todos aquellos elementos que preceden al valor 5}
+uses estructu;
+*/
+var origen;
+var distinto;
 
-  var pilaMensaje = inicPila();
-	
-  apilar(pilaMensaje, mensaje);
-	
-  writePila(pilaMensaje);
-	
-}*/
+origen = inicPila();
+distinto = inicPila();
+readPila(origen);
+writePila(origen);
 
-var CJTO1 = inicPila();
+if (!pilaVacia(origen)){
+  console.log("entro");
+  while (tope(origen) != 5) {
+    apilar (distinto, desapilar(origen))
+  }
 
-var CJTO2 = inicPila();
+} 
 
-var DADA = inicPila();
+writePila(origen);
 
-var elemAux;
-
-readPila(DADA);
-
-consoleAddMessage("DADA al principio:");
-
-writePila(DADA);
-
-elemAux = desapilar(DADA);
-
-apilar(CJTO1, elemAux);
-
-elemAux = desapilar(DADA);
-
-apilar(CJTO1, elemAux);
-
-elemAux = desapilar(DADA);
-
-apilar(CJTO1, elemAux);
-
-
-
-apilar(CJTO2, desapilar(DADA));
-
-apilar(CJTO2, desapilar(DADA));
-
-consoleAddMessage("********RESULTS*******");
-
-consoleAddMessage("DADA:");
-
-writePila(DADA);
-
-consoleAddMessage("CJTO1:");
-
-writePila(CJTO1);
-
-
-consoleAddMessage("CJTO2:");
-
-writePila(CJTO2);
-
-
+writePila(distinto);
+´´´
 
 
