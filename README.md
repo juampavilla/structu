@@ -5,7 +5,7 @@ And initial aproach to programming with stacks and rows in JS instead of Pascal
 en el archivo scripts.js están el uso de la pila para resolver diferentes problemas
 
 #Ejemplo
-´´´
+```
 "use strict";
 
 /*
@@ -33,6 +33,6 @@ if (!pilaVacia(origen)){
 writePila(origen);
 
 writePila(distinto);
-´´´
+```
 
 
