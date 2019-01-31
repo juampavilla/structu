@@ -2,6 +2,7 @@
 stacks and rows in JS, inspired in UNICEN Courses http://www.exa.unicen.edu.ar/
 And initial aproach to programming with stacks and rows in JS instead of Pascal
 
+
 #Example 
 "use strict";
 
@@ -37,3 +38,4 @@ writePila(CJTO1);
 
 consoleAddMessage("CJTO2:");
 writePila(CJTO2);
+
