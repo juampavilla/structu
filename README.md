@@ -10,29 +10,35 @@ en el archivo scripts.js están el uso de la pila para resolver diferentes probl
 
 /*
 program PASADISTINTOS;
-{Este un programa carga por teclado una pila ORIGEN y pasa a la pila DESTINTO
+{Este un programa carga por teclado una pila ORIGEN y pasa a la pila DESTINO
 todos aquellos elementos que preceden al valor 5}
 uses estructu;
 */
 var origen;
-var distinto;
+var destino;
 
 origen = inicPila();
-distinto = inicPila();
+destino = inicPila();
 readPila(origen);
 writePila(origen);
 
 if (!pilaVacia(origen)){
   console.log("entro");
   while (tope(origen) != 5) {
-    apilar (distinto, desapilar(origen))
+    apilar (destino, desapilar(origen))
   }
 
 } 
 
 writePila(origen);
 
-writePila(distinto);
+writePila(destino);
+
 ```
 
+#resultado
+input/origen: <BASE>|1||2||3||4||5||6||7|<TOPE>
+
+destino: <BASE>|1||2||3||4||5|<TOPE>
+origen: <BASE>|7||6|<TOPE>
 
